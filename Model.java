@@ -78,22 +78,18 @@ public class Model {
     }
 
     private void initArray(int x,int y){
-        desktop[x][y]=1;
-        desktop[3][3]=3;
-        desktop[3][5]=2;
-        desktop[3][6]=2;
-        desktop[3][7]=2;
-        desktop[4][3]=2;
-        desktop[5][3]=2;
-        desktop[6][3]=2;
-        desktop[6][4]=2;
-        desktop[6][5]=2;
-        //desktop[6][6]=2;
-        desktop[6][7]=2;
-        desktop[4][7]=2;
-        desktop[5][7]=2;
-        //desktop[7][6]=2;
-        //printArray();
+        desktop = new int[][]
+            {
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 2, 2, 2, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 2, 0, 2, 2, 2, 0},
+                {0, 0, 0, 0, 2, 0, 2, 0, 0, 0},
+                {0, 0, 0, 0, 2, 0, 2, 0, 0, 0},
+                {0, 0, 0, 0, 2, 2, 2, 0, 0, 0},
+                {0, 0, 0, 0, 2, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0},
+                {0, 0, 0, 0, 0, 0, 0, 0, 0, 0}
+            };
     }
 
     private void printArray(){
